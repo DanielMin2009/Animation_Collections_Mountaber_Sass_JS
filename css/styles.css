@@ -1,0 +1,247 @@
+/* ============ Font Styles ============ */
+@font-face {
+  font-family: "FS Siena Regular";
+  src: url("../fonts/fs-siena-regular.eot");
+  /* IE9*/
+  src: url("../fonts/fs-siena-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/fs-siena-regular.woff2") format("woff2"), url("../fonts/fs-siena-regular.woff") format("woff"), url("../fonts/fs-siena-regular.ttf") format("truetype"), url("../fonts/fs-siena-regular.svg#FS Siena Regular") format("svg");
+  /* iOS 4.1- */
+  font-weight: normal;
+  font-style: normal; }
+
+/* COLORS */
+/* MIXINS */
+html {
+  font-size: 100%; }
+
+body {
+  background-color: #f6f5f3 !important;
+  font-family: "FS Siena Regular", Georgia, "Times New Roman", Times, serif !important;
+  color: #6b6863;
+  height: 100vh; }
+
+.site-section {
+  height: 80vh; }
+
+.interior-height {
+  height: 80vh; }
+
+p {
+  color: #6b6863;
+  font-family: "FS Siena Regular", Georgia, "Times New Roman", Times, serif !important;
+  letter-spacing: 0.02rem;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  line-height: 146%;
+  font-size: 0.82rem; }
+
+a {
+  color: #6b6863;
+  font-family: "FS Siena Regular", Georgia, "Times New Roman", Times, serif !important;
+  letter-spacing: 0.02rem;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  line-height: 13px;
+  font-size: 0.82rem; }
+
+@media screen and (min-width: 576px) {
+  .padding-text {
+    padding-right: 15%; } }
+
+@media screen and (min-width: 768px) {
+  .padding-text {
+    padding-right: 20%; } }
+
+@media screen and (min-width: 992px) {
+  .padding-text {
+    padding-right: 45%; } }
+
+@media screen and (min-width: 1200px) {
+  .padding-text {
+    padding-right: 50%; } }
+
+h1 {
+  color: #d0b38b;
+  font-family: "FS Siena Regular", Georgia, "Times New Roman", Times, serif !important;
+  letter-spacing: 0.02rem;
+  text-transform: lowercase;
+  line-height: 96%;
+  font-size: 5.6rem;
+  margin-bottom: 24px; }
+
+h2 {
+  font-size: 2.8rem;
+  text-transform: lowercase; }
+
+.button {
+  color: #6b6863;
+  font-family: "FS Siena Regular", Georgia, "Times New Roman", Times, serif !important;
+  letter-spacing: 0.02rem;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  line-height: 15px;
+  border: 1px solid #6b6863;
+  display: block;
+  padding: 8px 20px;
+  margin-top: 24px;
+  width: 100px;
+  background: rgba(246, 245, 243, 0.5); }
+  .button:hover {
+    color: #a36846;
+    border: 1px solid #a36846;
+    cursor: none;
+    transition: color cubic-bezier(0.25, 0.46, 0.45, 0.94) 400ms; }
+
+button:focus {
+  outline: none;
+  outline: none; }
+
+figure {
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px; }
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px; }
+
+h1 {
+  display: block; }
+  h1 span {
+    display: inline-block; }
+
+.photo-collections {
+  width: 400px;
+  height: 400px;
+  position: relative; }
+
+.vertical-line {
+  border-left: 1px solid #485368;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  top: 48%; }
+
+figure h2 {
+  position: absolute;
+  top: 50%;
+  left: 40%; }
+
+.collections-text {
+  position: fixed;
+  right: 7vw;
+  width: 700px;
+  bottom: 10vh; }
+
+/************ My ZOOM Animation ***********/
+.img-jewels {
+  width: 400px;
+  height: 400px;
+  mix-blend-mode: darken; }
+  .img-jewels:hover, .img-jewels:focus {
+    cursor: pointer; }
+  .img-jewels img {
+    transition: all 0.76s cubic-bezier(0.2, 1, 0.3, 1);
+    opacity: 0.3; }
+  .img-jewels .emphasis {
+    transform: scale(1.25);
+    opacity: 1;
+    cursor: pointer; }
+  .img-jewels .emphasis-left-img {
+    transform-origin: center left; }
+  .img-jewels .emphasis-right-img {
+    transform-origin: center right; }
+  .img-jewels .shrank {
+    transform: scale(0.5) translate(0, 0);
+    filter: blur(4px);
+    -webkit-filter: blur(4px); }
+  .img-jewels .shrank-left-img {
+    transform-origin: top right; }
+  .img-jewels .shrank-right-img {
+    transform-origin: top left; }
+  .img-jewels #chamfer-h2 {
+    color: #8e5755; }
+    .img-jewels #chamfer-h2::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 2px;
+      transition: width 0.6s linear;
+      background: #8e5755; }
+  .img-jewels #rosemary-h2 {
+    color: #3b5847; }
+    .img-jewels #rosemary-h2::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 2px;
+      transition: width 0.6s linear;
+      background: #3b5847; }
+  .img-jewels:hover #rosemary-h2::after,
+  .img-jewels:hover #chamfer-h2::after {
+    width: 0%; }
+  .img-jewels .left-h2-emphasis {
+    transition: all 2s cubic-bezier(0.33, 1, 0.44, 1);
+    transform: scale(1.6);
+    position: absolute;
+    transition-duration: 1.2s;
+    top: 100% !important;
+    left: 20% !important; }
+  .img-jewels .right-h2-emphasis {
+    transition: all 2s cubic-bezier(0.33, 1, 0.44, 1);
+    transform: scale(1.6);
+    position: absolute;
+    transition-duration: 1.2s;
+    top: 100% !important;
+    left: 80% !important; }
+
+.show {
+  opacity: 1;
+  -webkit-animation-name: fadeInOpacity;
+  animation-name: fadeInOpacity;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -webkit-animation-duration: 0.66s;
+  animation-duration: 0.66s; }
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.2; }
+  100% {
+    opacity: 1; } }
+
+.hide {
+  opacity: 0;
+  -webkit-animation-name: fadeOutOpacity;
+  animation-name: fadeOutOpacity;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -webkit-animation-duration: 0.66s;
+  animation-duration: 0.66s; }
+
+@keyframes fadeOutOpacity {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.8; }
+  100% {
+    opacity: 0; } }
